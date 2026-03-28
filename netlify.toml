@@ -1,0 +1,20 @@
+[build]
+  functions = "netlify/functions"
+
+[[redirects]]
+  from = "/api/ai"
+  to = "/.netlify/functions/ai"
+  status = 200
+
+[[redirects]]
+  from = "/api/subscription"
+  to = "/.netlify/functions/subscription"
+  status = 200
+
+[[redirects]]
+  from = "/api/subscription/*"
+  to = "/.netlify/functions/subscription"
+  status = 200
+
+[functions]
+  node_bundler = "esbuild"

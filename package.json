@@ -1,0 +1,20 @@
+{
+  "name": "viral-studio-backend",
+  "version": "1.0.0",
+  "description": "Viral Studio API proxy and subscription management",
+  "main": "netlify/functions/ai.js",
+  "scripts": {
+    "dev": "netlify dev",
+    "deploy": "netlify deploy --prod"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.39.0",
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "netlify-cli": "^17.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
